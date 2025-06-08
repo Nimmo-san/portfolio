@@ -2,6 +2,7 @@
     --accent: #6343da;
     --text: #ffffff;
     --bg: #0b071d;
+    --bg-secondary: rgb(136, 133, 133);
 
     --font-heading: "Space Grotesk", sans-serif;
     --font-body: "Open Sans", sans-serif;
@@ -103,7 +104,7 @@ html {
     background: #0d0a1f;
     padding: 4rem 1rem;
     color: var(--text);
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 
@@ -146,4 +147,48 @@ html {
     flex-direction: column;
     text-align: center;
   }
+}
+
+
+.projects-section {
+    padding: 4rem 2rem;
+    background: var(--bg); /* Chnage later */
+    color: var(--text);
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-card {
+    background: var(--bg-secondary);
+    border: 2px solid var(--text);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(99, 67, 218, 0.3);
+    transition: transform .3s ease, box-shadow .3s;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px var(--accent);
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: left;
+}
+
+.card-content a {
+    display: inline-block;
+    margin-top: .5rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
 }
