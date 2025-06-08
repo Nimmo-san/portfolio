@@ -157,6 +157,8 @@ html {
     text-align: center;
 }
 
+/* TODO: add styling for header */
+
 .timeline {
     position: relative;
     margin-top: 2rem;
@@ -291,12 +293,47 @@ html {
     font-weight: 600;
 } */
 
+
+.services-section {
+    background: #0d0a1f;
+    padding: 4rem 2rem;
+    color: var(--text);
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.service-card {
+    background: #1d1a30;
+    border: 2px solid var(--accent);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px var(--accent);
+    transition: transform .3s;
+}
+
+/* TODO: add styling for header and content paragraph */
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px var(--accent);
+}
+
+
 .contact-section {
     background: var(--bg);
     padding: 4rem 2rem;
     color: var(--text);
     text-align: center;
 }
+
+/* TODO: add styling for header and content paragraph */
 
 .contact-form {
     max-width: 600px;
