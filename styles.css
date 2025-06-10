@@ -64,7 +64,7 @@ p { font-size: clamp(1.2rem, 4vw, 1rem); }
 
 .nav-links {
     display: flex;
-    background: white;
+    /* background: var(--bg); */
     margin: auto;
     justify-content: space-between;
     list-style: none;
@@ -79,7 +79,7 @@ p { font-size: clamp(1.2rem, 4vw, 1rem); }
 }
 
 .nav-links li a {
-    color: var(--accent);
+    color: var(--text);
     text-decoration: none;
 }
 
