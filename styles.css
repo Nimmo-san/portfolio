@@ -21,11 +21,11 @@ html {
 
 body {
     /* background-color: #6343da; */
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: clamp(1rem, .5vw, 2rem);
+    background-color: var(--bg);
 }
 
 .hero {
-    background-color: var(--bg);
     color: var(--text);
     height: 100vh;
     padding: 0 2rem;
