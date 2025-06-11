@@ -7,6 +7,7 @@
     <title>Natu - Portfolio Website</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
@@ -96,7 +97,7 @@
                     </svg>
                 </a>
 
-                
+
                 <div class="card-content">
                     <h3>Project Title</h3>
                     <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eius
@@ -108,7 +109,7 @@
         </div>
     </section>
 
-    <!-- <section id="services" class="services-section">
+    <section id="services" class="services-section">
         <h2>My Services</h2>
         <div class="services-grid">
             <div class="service-card" data-aos="fade-right">
@@ -131,23 +132,63 @@
             </div>
 
         </div>
-    </section> -->
-
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore recusandae fugit adipisci enim labore alias
-            aliquam sed, ea harum repellat accusamus minus illum, odio, rerum est laborum nesciunt? Assumenda, quam.</p>
-        <form class="contact-form" action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="text" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
     </section>
 
-    <script src="scripts/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000 });</script>
+    <section id="contact" class="contact-section">
+
+        <div class="contact-me">
+            <h2>Contact Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore recusandae fugit adipisci enim labore
+                alias
+                aliquam sed, ea harum repellat accusamus minus illum, odio, rerum est laborum nesciunt? Assumenda, quam.
+            </p>
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="socials">
+            <h2>Follow Socials</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatum, laborum quis quidem commodi aut
+                repudiandae officiis quisquam aspernatur exercitationem odit repellendus vero sed adipisci animi maxime
+                amet
+                quo vitae.</p>
+            <ul class="icons">
+                <li>
+                    <a href="https://github.com/Nimmo-san" class="icon brands alt fa-github" target="_blank"
+                        rel="noopener" aria-label="GitHub">
+                        <span class="label">GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/natu-okubet/" class="icon brands alt fa-linkedin-in"
+                        target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <span class="label">LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/nemooku/" class="icon brands alt fa-instagram" target="_blank"
+                        rel="noopener" aria-label="Instagram">
+                        <span class="label">Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="inner">
+            <ul class="copyright">
+                <li>&copy; Designed & Developed by Natu Okubet 2025</li>
+            </ul>
+        </div>
+
+        <script src="scripts/main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init({ duration: 1000 });</script>
 </body>
 
 </html>
