@@ -3,9 +3,28 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 const removeClass = (el, className) => el.classList.remove(className);
 
 // Toggle project description visibility
-function toggleDescription(card) {
-  toggleClass(card, 'active');
+function toggleDescription(clickedCard) {
+  const allCards = document.querySelectorAll('.project-card');
+
+  allCards.forEach(card => {
+    const desc = card.querySelector('.description');
+    const icon = card.querySelector('.toggle-icon');
+
+    if (card === clickedCard) {
+      const isOpen = card.classList.contains('active');
+      toggleClass(card, 'active')
+      desc.style.maxHeight = isOpen ? null : desc.scrollHeight + "px";
+      if (icon) icon.classList.toggle('rotated', !isOpen);
+    } else {
+      removeClass(card, 'active')
+      card.querySelector('.description').style.maxHeight = null;
+      if (card.querySelector('.toggle-icon')) {
+        card.querySelector('.toggle-icon').classList.remove('rotated');
+      }
+    }
+  });
 }
+
 
 // Elements
 const navToggle = document.getElementById('navToggle');

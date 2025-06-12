@@ -385,8 +385,18 @@ p {
     border-radius: var(--radius);
     padding: var(--padding);
     box-shadow: var(--shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all .3s ease;
     cursor: pointer;
+}
+
+.project-card .description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project-card.active .description {
+    min-height: fit-content;
 }
 
 .project-card:hover {
@@ -410,6 +420,16 @@ p {
     margin-top: 1rem;
     font-size: 1.25rem;
     color: var(--accent);
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.toggle-icon.rotated {
+  transform: rotate(180deg);
 }
 
 .card-content .description {
