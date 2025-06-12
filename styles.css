@@ -389,14 +389,21 @@ p {
     cursor: pointer;
 }
 
+/* not enough margin probably */
+/* .project-card.active {
+    transform: scale(1.02);
+    box-shadow: var(--shadow);
+} */
+
 .project-card .description {
     max-height: 0;
     overflow: hidden;
     transition: max-height .5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+/* Hard coded value for now */
 .project-card.active .description {
-    min-height: fit-content;
+    max-height: 200; 
 }
 
 .project-card:hover {
