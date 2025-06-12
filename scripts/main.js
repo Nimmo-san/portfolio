@@ -4,8 +4,11 @@ function toggleDescription(card) {
 
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
+const navLinksA = document.querySelectorAll('.nav-links a');
+const sections = document.querySelectorAll('section[id]');
 
 navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('active');
     navLinks.classList.toggle('active');
 });
 
@@ -15,8 +18,6 @@ document.querySelectorAll('.nav-links a').forEach(link =>
     })
 );
 
-const sections = document.querySelectorAll('section[id]');
-const navLinksA = document.querySelectorAll('.nav-links a');
 
 window.addEventListener('scroll', () => {
     let current = "";
