@@ -15,6 +15,7 @@ navToggle.addEventListener('click', () => {
 document.querySelectorAll('.nav-links a').forEach(link =>
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
+        navToggle.classList.remove('active')
     })
 );
 
