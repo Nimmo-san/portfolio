@@ -246,54 +246,46 @@ p {
 
 
 .about-section {
-    background: #0d0a1f;
-    padding: 4rem 1rem;
-    color: var(--text);
-    /* height: 100vh; */
+  background: var(--bg);
+  padding: var(--padding);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
 }
-
 
 .about-content {
-    font-family: var(--font-body);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-text {
-    flex: 1 1 300px;
+  max-width: 900px;
+  width: 100%;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--padding);
+  box-shadow: var(--shadow);
 }
 
 .about-text h2 {
-    font-family: var(--font-heading);
-    font-size: 2rem;
-    margin: 1rem;
-    color: var(--accent);
-    text-align: center;
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
 }
 
 .about-text p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
 }
 
 .skills {
-    margin-top: 1rem;
-    font-size: .95rem;
-    color: var(--text);
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #374151;
 }
 
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
+.skills strong {
+  color: var(--accent);
 }
 
-
+/* Cv section */
 .cv-section {
   background: var(--bg);
   padding: var(--padding);
