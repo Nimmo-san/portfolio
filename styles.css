@@ -95,6 +95,11 @@ p {
   color: var(--accent);
 }
 
+  .nav-links a.active {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
 /* Hamburger Toggle Button */
 .nav-toggle {
   display: none;
@@ -128,10 +133,6 @@ p {
     box-shadow: var(--shadow);
     border-radius: var(--radius);
   }
-
-  /* .nav-links li a:visited {
-    color: var(--accent);
-  } */
 
   .nav-links.active {
     display: flex;
