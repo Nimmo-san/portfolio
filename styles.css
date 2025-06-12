@@ -559,23 +559,51 @@ p {
     /* darker blue */
 }
 
-.socials ul.icons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-    list-style: none;
-    padding: 0;
+.socials {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: var(--padding);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.socials a {
-    font-size: 1.5rem;
-    color: var(--text);
-    transition: color 0.3s ease;
+.socials h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
 }
 
-.socials a:hover {
-    color: var(--accent);
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
+
+.social-list li a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.social-list li a i {
+  font-size: 1.2rem;
+}
+
+.social-list li a:hover {
+  color: var(--accent);
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
