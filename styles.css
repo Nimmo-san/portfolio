@@ -445,6 +445,7 @@ p {
     line-height: 1.6;
 }
 
+/* project card tech stack icons */
 .tech-icons {
   display: flex;
   gap: 0.75rem;
@@ -456,7 +457,6 @@ p {
   color: var(--accent);
   transition: color 0.3s ease;
 }
-
 
 
 /* services section */
