@@ -295,60 +295,67 @@ p {
 
 
 .cv-section {
-    background-color: #0d0a1f;
-    padding: 4rem 2rem;
-    color: white;
-    text-align: center;
+  background: var(--bg);
+  padding: var(--padding);
+  color: var(--text);
 }
 
-/* TODO: add styling for header */
+.cv-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: var(--gap);
+}
 
 .timeline {
-    position: relative;
-    margin-top: 2rem;
-    /* max-width: 800px; */
-    margin-inline: auto;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 20px;
-    width: 2px;
-    background: var(--accent);
+  position: relative;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--accent);
+  max-width: 800px;
 }
 
 .timeline-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    position: relative;
+  position: relative;
+  margin-bottom: var(--gap);
+  padding-left: 1.5rem;
 }
 
 .timeline-dot {
-    width: 16px;
-    height: 16px;
-    background: var(--accent);
-    border-radius: 50%;
-    position: relative;
-    top: 5px;
+  position: absolute;
+  left: -11px;
+  top: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  background: var(--accent);
+  border-radius: 50%;
+  border: 2px solid var(--card-bg);
+  box-shadow: 0 0 0 3px var(--bg);
 }
 
 .timeline-content {
-    /* font-family: var(--font-body); */
-    background: #1f1b35;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--accent);
-    flex: 1;
-    text-align: left;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--padding);
+  box-shadow: var(--shadow);
 }
 
-.timeline-content:hover {
-    box-shadow: 0 0 30px var(--accent);
+.timeline-content h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+  color: var(--accent);
+}
+
+.timeline-content span {
+  font-size: 0.875rem;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /* projects section */
