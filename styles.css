@@ -445,6 +445,19 @@ p {
     line-height: 1.6;
 }
 
+.tech-icons {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  color: #4b5563;
+}
+
+.tech-icons i:hover {
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+
 
 /* services section */
 .services-section {
