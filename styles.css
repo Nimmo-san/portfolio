@@ -170,78 +170,68 @@ p {
 }
 
 .hero {
-    color: var(--text);
-    height: 100vh;
-    padding: 0 2rem;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: var(--padding);
+  background: var(--bg);
+  color: var(--text);
+  text-align: center;
 }
 
-/* .hero-content {
-    max-width: 800px;
-} */
+.hero-content {
+  max-width: 800px;
+  width: 100%;
+}
 
 .hero h1 {
-    /* font-size: clamp(2rem, 6vw, 3rem); */
-    font-family: var(--font-heading);
-    margin: 1rem;
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
 }
 
 .hero .highlight {
-    color: var(--accent);
+  color: var(--highlight);
 }
 
-.subcontent {
-    margin: 2rem;
+.sub-content .subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
-.subtitle {
-    font-family: var(--font-body);
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: .5rem;
-}
-
-.tagline {
-    /* font-size: 1rem; */
-    font-weight: 200;
-    margin-bottom: 2rem;
+.sub-content .tagline {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
 }
 
 .cta {
-    color: var(--text);
-    padding: .75rem 2rem;
-    border-radius: 2rem;
-    border: 2px solid var(--accent);
-    box-shadow: var(--shadow);
-    display: inline-block;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all 1.0s ease;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: white;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
 }
 
 .cta:hover {
-    background: var(--accent);
+  background: #1e40af;
 }
 
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-        line-height: 1.2;
-        flex-wrap: wrap;
-    }
+/* Responsive */
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
 
-    .subtitle {
-        font-size: 1.2rem;
-    }
-
-    .tagline {
-        font-size: .9rem;
-    }
+  .sub-content .subtitle {
+    font-size: 1rem;
+  }
 }
 
 
