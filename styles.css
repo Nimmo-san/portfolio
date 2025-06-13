@@ -403,7 +403,7 @@ p {
 
 /* Hard coded value for now */
 .project-card.active .description {
-    max-height: 200; 
+    max-height: 200;
 }
 
 .project-card:hover {
@@ -430,13 +430,13 @@ p {
 }
 
 .toggle-icon {
-  transition: transform 0.3s ease;
-  display: inline-block;
-  margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin-left: 0.5rem;
 }
 
 .toggle-icon.rotated {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .card-content .description {
@@ -447,15 +447,15 @@ p {
 
 /* project card tech stack icons */
 .tech-icons {
-  display: flex;
-  gap: 0.75rem;
-  font-size: 1.5rem;
-  color: #4b5563;
+    display: flex;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    color: #4b5563;
 }
 
 .tech-icons i:hover {
-  color: var(--accent);
-  transition: color 0.3s ease;
+    color: var(--accent);
+    transition: color 0.3s ease;
 }
 
 
@@ -560,48 +560,51 @@ p {
 }
 
 .socials {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  padding: var(--padding);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: var(--padding);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-.socials h2 {
+/* .socials h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--accent);
-}
+} */
 
 .social-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
 }
 
 .social-list li a {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 500;
-  transition: color 0.3s ease;
-  font-size: 1rem;
+    align-self: center;
+    display: flex;
+    text-decoration: none;
+    color: var(--text);
+    transition: color 0.3s ease;
+    font-size: 1rem;
 }
 
 .social-list li a i {
-  font-size: 1.2rem;
+    font-size: 2.5rem;
 }
 
 .social-list li a:hover {
-  color: var(--accent);
+    color: var(--accent);
+    transform: scale(1.15);
+    transition: transform .3s ease-in;
+    transition-delay: 100ms;
 }
 
 
@@ -612,9 +615,7 @@ p {
     }
 }
 
-
-
-
+/* Footer */
 footer {
     text-align: center;
     padding: 2rem;
