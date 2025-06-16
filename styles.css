@@ -454,14 +454,14 @@ p {
 }
 
 .toggle-icon {
-    /* transition: transform 0.3s ease; */
-    display: inline-block;
+    transition: transform 0.3s ease-out;
+    /* display: inline-block; */
     margin-left: 0.5rem;
 }
 
 .toggle-icon.rotated {
     transform: rotate(180deg);
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease-in;
 }
 
 .card-content .description {
