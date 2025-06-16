@@ -411,8 +411,32 @@ p {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-.icon-link {
+.project-links {
     position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    top: 1rem;
+    right: 1rem;
+}
+
+.project-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: var(--accent);
+}
+
+.icon-link {
     top: 1rem;
     right: 1rem;
     color: var(--text);
