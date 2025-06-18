@@ -283,7 +283,7 @@ p {
     line-height: 1.7;
     margin-bottom: 1rem;
 }
-
+/* 
 .skills {
     margin-top: 1rem;
     font-weight: 500;
@@ -292,7 +292,7 @@ p {
 
 .skills strong {
     color: var(--accent);
-}
+} */
 
 /* Cv section */
 .cv-section {
